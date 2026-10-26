@@ -1,0 +1,73 @@
+---
+// src/components/Header.astro
+---
+
+<header class="absolute top-0 inset-x-0 z-50 bg-transparent transition-all duration-300 pt-2">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+    <!-- Lado Izquierdo: Marca -->
+    <a href="#inicio" class="flex items-center focus:outline-none focus:ring-2 focus:ring-brand-orange rounded-lg">
+      <img 
+        src="/logo1.png" 
+        alt="LLAREK Ingeniería y Construcción" 
+        class="h-10 sm:h-12 w-auto object-contain brightness-0 invert opacity-90 transition-transform hover:scale-105"
+      />
+    </a>
+
+    <!-- Centro: Enlaces de Navegación -->
+    <nav class="hidden md:flex items-center gap-8">
+      <a href="#inicio" class="text-gray-300 hover:text-white font-medium text-sm transition-colors relative py-1 hover:after:w-full after:w-0 after:h-0.5 after:bg-brand-orange after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-200">Inicio</a>
+      <a href="#servicios" class="text-gray-300 hover:text-white font-medium text-sm transition-colors relative py-1 hover:after:w-full after:w-0 after:h-0.5 after:bg-brand-orange after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-200">Servicios</a>
+      <a href="#nosotros" class="text-gray-300 hover:text-white font-medium text-sm transition-colors relative py-1 hover:after:w-full after:w-0 after:h-0.5 after:bg-brand-orange after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-200">Nosotros</a>
+      <a href="#galeria" class="text-gray-300 hover:text-white font-medium text-sm transition-colors relative py-1 hover:after:w-full after:w-0 after:h-0.5 after:bg-brand-orange after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-200">Galería</a>
+    </nav>
+
+    <!-- Lado Derecho: Botón Contáctanos -->
+    <div class="flex items-center gap-4">
+      <a href="#contacto" class="inline-flex items-center justify-center px-4 py-2 bg-brand-orange hover:bg-brand-orange-hover text-white text-sm font-semibold rounded-md shadow-md active:scale-95 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-orange">
+        <span>Contáctanos</span>
+        <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+        </svg>
+      </a>
+      
+      <!-- Botón Menú Móvil -->
+      <button id="mobile-menu-btn" aria-label="Abrir menú" class="md:hidden text-gray-300 hover:text-white p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-orange">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Menú Desplegable Móvil -->
+  <div id="mobile-menu" class="hidden md:hidden bg-brand-graphite border-b border-gray-700 px-4 pt-2 pb-5 space-y-2">
+    <a href="#inicio" class="block py-2 text-gray-200 hover:text-white font-medium">Inicio</a>
+    <a href="#servicios" class="block py-2 text-gray-200 hover:text-white font-medium">Servicios</a>
+    <a href="#nosotros" class="block py-2 text-gray-200 hover:text-white font-medium">Nosotros</a>
+    <a href="#galeria" class="block py-2 text-gray-200 hover:text-white font-medium">Galería</a>
+    <a href="#contacto" class="block w-full text-center py-2.5 mt-2 bg-brand-orange text-white rounded font-semibold">Contáctanos</a>
+  </div>
+</header>
+
+<script>
+  // Lógica del menú móvil encapsulada para Astro
+  function setupMobileMenu() {
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (mobileBtn && mobileMenu) {
+      mobileBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+        });
+      });
+    }
+  }
+
+  // Ejecutar al cargar la página (soporta transiciones de vista en Astro si las agregas después)
+  document.addEventListener('DOMContentLoaded', setupMobileMenu);
+</script>

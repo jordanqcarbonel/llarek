@@ -1,0 +1,77 @@
+---
+// src/components/Footer.astro
+---
+
+<footer class="bg-[#111827] text-gray-400 py-16 border-t border-gray-800 relative z-20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Contenido Principal del Footer en Columnas -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-gray-800">
+      
+      <!-- Columna 1: Logo y Descripción -->
+      <div class="space-y-4">
+        <div class="flex items-center">
+          <img 
+            src="/logo1.png" 
+            alt="LLAREK Logo" 
+            class="h-12 w-auto object-contain brightness-0 invert opacity-90"
+          />
+        </div>
+        <p class="text-xs text-gray-400 leading-relaxed">
+          Ingeniería que transforma espacios. Soluciones integrales de alta calidad para el sector corporativo, industrial e inmobiliario.
+        </p>
+        <p class="text-xs text-gray-500 font-mono">
+          RUC: 20602163769
+        </p>
+      </div>
+
+      <!-- Columna 2: Enlaces Rápidos -->
+      <div>
+        <h4 class="text-white text-sm font-bold uppercase tracking-wider mb-4">Enlaces</h4>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="#inicio" class="hover:text-brand-orange transition-colors">Inicio</a></li>
+          <li><a href="#servicios" class="hover:text-brand-orange transition-colors">Servicios</a></li>
+          <li><a href="#nosotros" class="hover:text-brand-orange transition-colors">Nosotros</a></li>
+          <li><a href="#galeria" class="hover:text-brand-orange transition-colors">Galería</a></li>
+          <li><a href="#contacto" class="hover:text-brand-orange transition-colors">Contáctanos</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 3: Contacto -->
+      <div>
+        <h4 class="text-white text-sm font-bold uppercase tracking-wider mb-4">Contacto</h4>
+        <ul class="space-y-3 text-xs text-gray-400">
+          <li class="flex items-start gap-2">
+            <span class="text-brand-orange font-semibold">📞</span>
+            <span>+51 999 999 999<br/>+51 999 999 999</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="text-brand-orange font-semibold">✉️</span>
+            <span>contacto@llarek-ingenieria.com</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-brand-orange font-semibold">📍</span>
+            <span>Oficinas Principales: Av. -, Lima, Perú   </span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Columna 4: Legal -->
+      <div>
+        <h4 class="text-white text-sm font-bold uppercase tracking-wider mb-4">Legal</h4>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="#" class="hover:text-brand-orange transition-colors">Política de Privacidad</a></li>
+          <li><a href="#" class="hover:text-brand-orange transition-colors">Términos y Condiciones</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Barra Inferior de Copyright -->
+    <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 gap-4">
+      <p>© 2026 LLAREK Ingeniería y Construcción S.A. Todos los derechos reservados.</p>
+      <p>Desarrollado con arquitectura modular y alto rendimiento.</p>
+    </div>
+
+  </div>
+</footer>

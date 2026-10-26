@@ -1,0 +1,53 @@
+---
+// src/components/Gallery.astro
+---
+
+<section id="galeria" class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-14">
+      <div>
+        <span class="text-xs uppercase tracking-widest font-bold text-brand-orange">Portafolio Reciente</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-graphite mt-2">Galería de Obras</h2>
+        <div class="w-16 h-1 bg-brand-blue mt-3 rounded-full"></div>
+      </div>
+      <p class="text-gray-500 max-w-md mt-4 md:mt-0 text-sm">
+        Evidencia tangible de nuestra capacidad de ejecución técnica y rigor constructivo en el sector comercial e industrial.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <!-- Obra 1 -->
+      <div class="relative group overflow-hidden rounded-xl h-80 shadow-md">
+        <img alt="Torre Financiera Apex" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1000&auto=format&fit=crop" />
+        <div class="absolute inset-0 bg-gradient-to-t from-brand-graphite via-transparent to-transparent opacity-90 p-6 flex flex-col justify-end text-white">
+          <span class="text-xs text-brand-orange font-semibold tracking-wider uppercase">Ingeniería Estructural</span>
+          <h4 class="text-lg font-bold">Torre Corporativa Apex</h4>
+          <p class="text-xs text-gray-300 mt-1">42 niveles, estructura mixta hormigón-acero.</p>
+        </div>
+      </div>
+
+      <!-- Obra 2 -->
+      <div class="relative group overflow-hidden rounded-xl h-80 shadow-md">
+        <img alt="Parque Industrial Logístico" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=1000&auto=format&fit=crop" />
+        <div class="absolute inset-0 bg-gradient-to-t from-brand-graphite via-transparent to-transparent opacity-90 p-6 flex flex-col justify-end text-white">
+          <span class="text-xs text-brand-orange font-semibold tracking-wider uppercase">Infraestructura Pesada</span>
+          <h4 class="text-lg font-bold">Complejo Logístico Norte</h4>
+          <p class="text-xs text-gray-300 mt-1">28,000 m² de nave y vialidades de alta resistencia.</p>
+        </div>
+      </div>
+
+      <!-- Obra 3 -->
+      <div class="relative group overflow-hidden rounded-xl h-80 shadow-md">
+        <img alt="Sede Corporativa Synergy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1000&auto=format&fit=crop" />
+        <div class="absolute inset-0 bg-gradient-to-t from-brand-graphite via-transparent to-transparent opacity-90 p-6 flex flex-col justify-end text-white">
+          <span class="text-xs text-brand-orange font-semibold tracking-wider uppercase">Fit-Out & Acabados</span>
+          <h4 class="text-lg font-bold">Sede Corporativa Synergy</h4>
+          <p class="text-xs text-gray-300 mt-1">Habilitación integral de 3,500 m² de oficinas sostenibles.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

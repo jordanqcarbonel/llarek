@@ -1,0 +1,144 @@
+---
+// src/components/Services.astro
+---
+
+<section id="servicios" class="py-24 bg-white relative z-20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Encabezado de la Sección -->
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="text-xs uppercase tracking-widest font-bold text-brand-orange bg-orange-50 px-3 py-1 rounded-full border border-orange-200/60">
+        Especialidades Profesionales
+      </span>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-graphite mt-3 tracking-tight">
+        Nuestros Servicios
+      </h2>
+      <div class="w-16 h-1 bg-brand-blue mx-auto mt-4 rounded-full"></div>
+      <p class="text-gray-600 mt-4 text-base sm:text-lg">
+        Aportamos excelencia técnica, metodologías BIM y gestión integral en cada etapa de desarrollo estructural y constructivo.
+      </p>
+    </div>
+
+    <!-- Cuadrícula (CSS Grid) de 3 columnas -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- Tarjeta 1: Consultoría & Diseño Estructural -->
+      <div class="flex flex-col h-full bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 overflow-hidden group">
+        <div class="relative h-56 w-full overflow-hidden bg-gray-100 shrink-0">
+          <img alt="Ingeniería y Diseño Estructural LLAREK" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1000&auto=format&fit=crop" />
+          <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-md p-2 rounded-lg shadow">
+            <span class="text-xs font-bold text-brand-blue">FASE 01</span>
+          </div>
+        </div>
+        <div class="flex-1 flex flex-col p-6">
+          <div class="w-12 h-12 -mt-12 mb-4 rounded-lg bg-brand-blue text-white flex items-center justify-center shadow-lg border-2 border-white shrink-0">
+            <svg class="w-6 h-6 stroke-current" fill="none" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-brand-blue mb-3 group-hover:text-brand-blue-hover transition-colors">
+            Ingeniería y Diseño Estructural
+          </h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-6">
+            Modelado BIM, cálculo estructural sismorresistente, análisis de cargas y planos técnicos ejecutivos optimizados para garantizar máxima seguridad y ahorro de materiales.
+          </p>
+          <ul class="text-xs text-gray-500 space-y-1.5 mb-6 border-t border-gray-100 pt-4">
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-brand-orange"></span> Cálculo de estructuras de hormigón y acero
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-brand-orange"></span> Modelado y coordinación BIM LOD 400
+            </li>
+          </ul>
+          <div class="mt-auto pt-5">
+            <a href="#contacto" class="w-full inline-flex items-center justify-center py-2.5 px-4 bg-brand-orange hover:bg-brand-orange-hover text-white text-sm font-semibold rounded-lg shadow-sm hover:shadow-orange-500/20 active:scale-98 transition-all">
+              <span>Cotizar</span>
+              <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 2: Construcción Civil & Edificación -->
+      <div class="flex flex-col h-full bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 overflow-hidden group">
+        <div class="relative h-56 w-full overflow-hidden bg-gray-100 shrink-0">
+          <img alt="Construcción Civil y Edificación LLAREK" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?q=80&w=1000&auto=format&fit=crop" />
+          <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-md p-2 rounded-lg shadow">
+            <span class="text-xs font-bold text-brand-blue">FASE 02</span>
+          </div>
+        </div>
+        <div class="flex-1 flex flex-col p-6">
+          <div class="w-12 h-12 -mt-12 mb-4 rounded-lg bg-brand-blue text-white flex items-center justify-center shadow-lg border-2 border-white shrink-0">
+            <svg class="w-6 h-6 stroke-current" fill="none" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-brand-blue mb-3 group-hover:text-brand-blue-hover transition-colors">
+            Construcción Civil y Edificación
+          </h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-6">
+            Ejecución de proyectos de obra civil, naves industriales y desarrollos residenciales con supervisión permanente in-situ y control estricto de cronogramas y presupuesto.
+          </p>
+          <ul class="text-xs text-gray-500 space-y-1.5 mb-6 border-t border-gray-100 pt-4">
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-brand-orange"></span> Gestión de obra llave en mano (EPC)
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-brand-orange"></span> Control riguroso de calidad y seguridad ocupacional
+            </li>
+          </ul>
+          <div class="mt-auto pt-5">
+            <a href="#contacto" class="w-full inline-flex items-center justify-center py-2.5 px-4 bg-brand-orange hover:bg-brand-orange-hover text-white text-sm font-semibold rounded-lg shadow-sm hover:shadow-orange-500/20 active:scale-98 transition-all">
+              <span>Cotizar</span>
+              <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 3: Habilitación y Remodelación Comercial -->
+      <div class="flex flex-col h-full bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 overflow-hidden group">
+        <div class="relative h-56 w-full overflow-hidden bg-gray-100 shrink-0">
+          <img alt="Habilitación y Remodelación Comercial LLAREK" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1000&auto=format&fit=crop" />
+          <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-md p-2 rounded-lg shadow">
+            <span class="text-xs font-bold text-brand-blue">FASE 03</span>
+          </div>
+        </div>
+        <div class="flex-1 flex flex-col p-6">
+          <div class="w-12 h-12 -mt-12 mb-4 rounded-lg bg-brand-blue text-white flex items-center justify-center shadow-lg border-2 border-white shrink-0">
+            <svg class="w-6 h-6 stroke-current" fill="none" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-brand-blue mb-3 group-hover:text-brand-blue-hover transition-colors">
+            Habilitación y Remodelación Comercial
+          </h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-6">
+            Transformación integral de oficinas premium, retail e instalaciones corporativas combinando acústica moderna, ergonomía lumínica y acabados de alta durabilidad.
+          </p>
+          <ul class="text-xs text-gray-500 space-y-1.5 mb-6 border-t border-gray-100 pt-4">
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-brand-orange"></span> Instalaciones electromecánicas e HVAC
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-brand-orange"></span> Reacondicionamiento rápido sin detención
+            </li>
+          </ul>
+          <div class="mt-auto pt-5">
+            <a href="#contacto" class="w-full inline-flex items-center justify-center py-2.5 px-4 bg-brand-orange hover:bg-brand-orange-hover text-white text-sm font-semibold rounded-lg shadow-sm hover:shadow-orange-500/20 active:scale-98 transition-all">
+              <span>Cotizar</span>
+              <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
